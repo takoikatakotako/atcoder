@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.13)
+project(competitive_programming)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(competitive_programming main.cpp abc086_a.cpp abc081_a.cpp abc081_b.cpp abc087_b.cpp abc088_b.cpp)
