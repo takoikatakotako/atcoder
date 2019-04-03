@@ -5,7 +5,7 @@
 using namespace std;
 
 
-int main() {
+int abc088_b() {
     int N;
     cin >> N;
     vector<int> a(N);
