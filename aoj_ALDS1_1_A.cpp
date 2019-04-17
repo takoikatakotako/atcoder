@@ -9,19 +9,15 @@ using namespace std;
 void printArray(vector<int> vector, bool isLast) {
     int size = vector.size();
     for (int i = 0; i < size; ++i) {
-        if (i != size - 1) {
-            cout << vector[i];
+        if (i == size - 1) {
+            cout << vector[i] << endl;
         } else {
             cout << vector[i] << " ";
         }
     }
-
-    if (!isLast) {
-        cout << endl;
-    }
 }
 
-int main() {
+int aoj_ALDS1_1_A() {
     int N;
     cin >> N;
     vector<int> A(N);
