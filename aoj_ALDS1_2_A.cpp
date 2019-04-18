@@ -4,8 +4,8 @@
 
 using namespace std;
 
-// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_A&lang=jp
-// 挿入ソート
+// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_2_A
+// バブルソート
 static void printArray(vector<int> vector) {
     int size = vector.size();
     for (int i = 0; i < size; ++i) {
@@ -17,7 +17,7 @@ static void printArray(vector<int> vector) {
     }
 }
 
-int aoj_ALDS1_1_A() {
+int aoj_ALDS1_2_A() {
     int N;
     cin >> N;
     vector<int> A(N);
@@ -26,20 +26,22 @@ int aoj_ALDS1_1_A() {
         cin >> A[i];
     }
 
-    printArray(A);
-
-    for (int i = 1; i < N; ++i) {
-        int v = A[i];
-        int j = i - 1;
-
-        while (j >= 0 && A[j] > v) {
-            A[j+1] = A[j];
-            j--;
+    // 逆の隣接要素が存在する
+    bool flag = true;
+    int counter = 0;
+    while (flag) {
+        flag = false;
+        for (int j = N - 1; j > 0; --j) {
+            if(A[j] < A[j-1]) {
+                swap(A[j], A[j - 1]);
+                flag = true;
+                ++counter;
+            }
         }
-        A[j+1] = v;
-
-        printArray(A);
     }
+
+    printArray(A);
+    cout << counter << endl;
 
     return 0;
 }
