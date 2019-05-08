@@ -18,6 +18,5 @@ int wip_abc104_c() {
         cin >> C[i];
     }
 
-
     return 0;
 }
