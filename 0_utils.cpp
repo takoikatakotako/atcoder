@@ -21,3 +21,11 @@ void mapProblems() {
         }
     }
 }
+
+
+// 文字列を int に変換
+
+int stringToInt(string str) {
+    int number = atoi(str.c_str());
+    return number;
+}
