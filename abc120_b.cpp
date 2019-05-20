@@ -17,6 +17,19 @@
 using namespace std;
 using lli = long long int;
 
-int main() {
-    
+int abc120_b() {
+
+    int A, B, K;
+    cin >> A >> B >> K;
+
+    int counter = 0;
+    for (int i = 100; i <= 100; --i) {
+        if (A % i == 0 && B % i == 0) {
+            ++counter;
+            if (counter == K) {
+                cout << i << endl;
+                return 0;
+            }
+        }
+    }
 }
