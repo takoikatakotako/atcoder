@@ -62,7 +62,7 @@ public:
 };
 
 
-int main() {
+int wip_aoj_ALDS1_3_B() {
     int n, q;
     cin >> n >> q;
 

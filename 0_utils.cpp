@@ -1,8 +1,8 @@
-
 #include <iostream>
 #include<math.h>
 #include <vector>
 #include <numeric>
+#include <sstream>
 
 using namespace std;
 
@@ -28,4 +28,19 @@ void mapProblems() {
 int stringToInt(string str) {
     int number = atoi(str.c_str());
     return number;
+}
+
+
+// 文字列を分割して vector に入れる
+
+vector<string> split(const string &s, char delimiter) {
+    vector<string> elements;
+    stringstream ss(s);
+    string item;
+    while (getline(ss, item, delimiter)) {
+        if (!item.empty()) {
+            elements.push_back(item);
+        }
+    }
+    return elements;
 }

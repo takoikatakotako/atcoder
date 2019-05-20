@@ -8,7 +8,7 @@ using namespace std;
 // http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_A&lang=jp
 // スタック
 
-vector<string> split(const string &s, char delimiter) {
+vector<string> split20190516(const string &s, char delimiter) {
     vector<string> elements;
     stringstream ss(s);
     string item;
@@ -56,7 +56,7 @@ int aoj_ALDS1_3_A() {
     string s;
     getline(cin, s);
 
-    vector<string> array = split(s, ' ');
+    vector<string> array = split20190516(s, ' ');
 
     Stack stack;
     stack.initialize();

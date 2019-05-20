@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main() {
+int abc125_c() {
 
     long long N;
     cin >> N;

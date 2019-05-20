@@ -13,7 +13,7 @@ string reverse(string str) {
     return str;
 }
 
-int main() {
+int abc124_d() {
 
     int N, K;
     cin >> N >> K;
