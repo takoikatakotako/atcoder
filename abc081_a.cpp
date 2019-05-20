@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 int abc081_a() {
     string s;
     cin >> s;
