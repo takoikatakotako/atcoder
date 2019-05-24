@@ -44,3 +44,6 @@ vector<string> split(const string &s, char delimiter) {
     }
     return elements;
 }
+
+// ベクターの最小値を取得する
+// unsigned long minElementIndex = min_element(temps.begin(),temps.end()) - temps.begin();
