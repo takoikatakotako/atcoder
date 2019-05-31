@@ -17,7 +17,10 @@
 using namespace std;
 using lli = long long int;
 
-int main() {
+int abc128_a() {
 
+    int A, P;
+    cin >> A >> P;
 
+    cout << (3 * A + P) / 2 << endl;
 }
