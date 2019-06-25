@@ -18,7 +18,7 @@ using namespace std;
 using lli = long long int;
 
 
-int main() {
+int abc130_d() {
 
     lli N, K;
     cin >> N >> K;

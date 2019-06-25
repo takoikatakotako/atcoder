@@ -47,3 +47,15 @@ vector<string> split(const string &s, char delimiter) {
 
 // ベクターの最小値を取得する
 // unsigned long minElementIndex = min_element(temps.begin(),temps.end()) - temps.begin();
+
+
+// GCD を求める
+lli gcd(lli x, lli y) {
+    if(y == 0) return x;
+    return gcd(y, x%y);
+}
+
+
+lli max(lli a, lli b) {
+    return  (a > b) ? a : b;
+}
