@@ -16,31 +16,23 @@
 
 using namespace std;
 using lli = long long int;
-using ll = long long;
+
 
 long charCounter(string sentence, char character) {
     return count(sentence.cbegin(), sentence.cend(), character);
 }
 
-int main() {
-
+int abc132_a() {
     string S;
     cin >> S;
 
-//    vector<bool > blocks(S.size());
-//
-//    for (int i = 0; i < S.size(): ++i) {
-//
-//    }
-
-    lli zero = charCounter(S, '1');
-    lli one = charCounter(S, '0');
-
-    if (zero > one) {
-        cout << one * 2<< endl;
+    if ((charCounter(S, S[0]) == 2) && (charCounter(S, S[1]) == 2) &&
+        (charCounter(S, S[2]) == 2) && (charCounter(S, S[3]) == 2)) {
+        cout << "Yes" << endl;
     } else {
-        cout << zero * 2<< endl;
+        cout << "No" << endl;
     }
 
     return 0;
 }
+

@@ -55,7 +55,14 @@ lli gcd(lli x, lli y) {
     return gcd(y, x%y);
 }
 
-
+// long long int で大きい方を取得する
 lli max(lli a, lli b) {
     return  (a > b) ? a : b;
 }
+
+// 文字列中の文字数をカウント
+long charCounter(string sentence, char character) {
+    return count(sentence.cbegin(), sentence.cend(), character);
+}
+
+// 独自 struct のソート
