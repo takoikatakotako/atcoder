@@ -20,14 +20,21 @@ using ll = long long;
 
 
 int main() {
-    int N;
-//    cin >> N;
-//
-//    if (N % 2 == 0) {
-//        cout << 1 / double(N - 1) << endl;
-//    } else {
-//        cout << 1 / double(N) << endl;
-//    }
-//
-//    return 0;
+    lli A, B;
+    cin >> A >> B;
+
+    if (A + B > A - B) {
+        if (A + B > A * B) {
+            cout << A + B << endl;
+        } else {
+            cout << A * B << endl;
+        }
+    } else {
+        if (A - B > A * B) {
+            cout << A - B << endl;
+        } else {
+            cout << A * B << endl;
+        }
+    }
+    return 0;
 }

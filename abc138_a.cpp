@@ -20,14 +20,14 @@ using ll = long long;
 
 
 int main() {
-    int N;
-//    cin >> N;
-//
-//    if (N % 2 == 0) {
-//        cout << 1 / double(N - 1) << endl;
-//    } else {
-//        cout << 1 / double(N) << endl;
-//    }
-//
-//    return 0;
+    lli a;
+    string s;
+    cin >> a >> s;
+
+    if (a >= 3200) {
+        cout << s << endl;
+    } else {
+        cout << "red" << endl;
+    }
+    return 0;
 }

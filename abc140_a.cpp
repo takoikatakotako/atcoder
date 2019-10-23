@@ -20,14 +20,8 @@ using ll = long long;
 
 
 int main() {
-    int N;
-//    cin >> N;
-//
-//    if (N % 2 == 0) {
-//        cout << 1 / double(N - 1) << endl;
-//    } else {
-//        cout << 1 / double(N) << endl;
-//    }
-//
-//    return 0;
+    lli N;
+    cin >> N;
+    cout << N * N * N << endl;
+    return 0;
 }
