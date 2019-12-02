@@ -13,12 +13,27 @@
 #include <cassert>
 #include <utility>
 #include <functional>
-#include <map>
 
 using namespace std;
 using lli = long long int;
 using ll = long long;
 
 int main() {
+    lli N, K;
+    cin >> N >> K;
 
+    vector<int> h(N);
+    for (int i = 0; i < N; ++i) {
+        cin >> h[i];
+    }
+
+    lli counter = 0;
+    for (int i = 0; i < N; ++i) {
+        if (h[i] >= K) {
+            ++counter;
+        }
+    }
+
+    cout << counter << endl;
+    return 0;
 }

@@ -20,5 +20,7 @@ using lli = long long int;
 using ll = long long;
 
 int main() {
-
+    int r;
+    cin >> r;
+    cout << r * r << endl;
 }

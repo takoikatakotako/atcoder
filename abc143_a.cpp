@@ -13,12 +13,20 @@
 #include <cassert>
 #include <utility>
 #include <functional>
-#include <map>
 
 using namespace std;
 using lli = long long int;
 using ll = long long;
 
 int main() {
+    int A, B;
+    cin >> A >> B;
 
+    if (A - 2 * B > 0) {
+        cout << A - 2 * B << endl;
+    } else {
+        cout << 0 << endl;
+    }
+
+    return 0;
 }
